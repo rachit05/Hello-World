@@ -1,3 +1,12 @@
+#page{
+    transition:transform 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: bottom right;
+}
+.turn #page{
+    transform:scale(0.9);
+
+}
+
 .sidenavul{
     position: absolute;
     top:50%;
@@ -30,13 +39,8 @@
 #left-column{
     background:white;
     position: relative;
-    animation:leftcolumn 2s 2s infinite
 }
-@keyframes leftcolumn{
-    0${background:white}
-    50%{background:#eee}
-    100%{background:white;}
-}
+
 
 
 #right-column{
@@ -55,8 +59,10 @@
     padding:20px 40px;
     opacity: 0;
     transform: translateX(-20%);
-    animation:quotecard 2s 5s forwards cubic-bezier(0.455, 0.03, 0.515, 1)
+    animation:quotecard 2s 5s forwards cubic-bezier(0.455, 0.03, 0.515, 1);
+
 }
+
 @keyframes quotecard{
     0%{
         opacity: 0;

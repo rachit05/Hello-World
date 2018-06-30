@@ -13,10 +13,10 @@
   </head>
   <body>
       
-    <div class="container-fluid">
+    <div class="container-fluid" id="page">
         <div class="row">
             <nav class="col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">beO.</a>
+              <a class="navbar-brand" href="#" id="logobtn" >beO.</a>
               <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                   aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,6 +60,12 @@
 
 
     <!-- Optional JavaScript -->
+    <script>
+      let logo = document.querySelector('#logobtn');
+      logo.addEventListener('click',function(){
+        document.body.classList.toggle('turn')
+      })
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

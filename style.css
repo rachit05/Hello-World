@@ -7,7 +7,7 @@
 }
 .sidenavul li{
     list-style: none;
-    color:white;
+    color:black;
     font-size:2em;
     opacity: 0;
 }
@@ -30,11 +30,12 @@
 #left-column{
     background:white;
     position: relative;
-    animation:leftcolumn 2s 2s forwards
+    animation:leftcolumn 2s 2s infinite
 }
 @keyframes leftcolumn{
-    from{background:white}
-    to{background:rgb(30, 31, 30)}
+    0${background:white}
+    50%{background:#eee}
+    100%{background:white;}
 }
 
 
@@ -63,6 +64,7 @@
     }
     100%{
         opacity: 1;
-        transform: translateX(-20%)
+        transform: translateX(-20%);
+        box-shadow:0 0 5px rgba(0,0,0,.25)
     }
 }
